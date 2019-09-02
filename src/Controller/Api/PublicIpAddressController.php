@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Api;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -14,7 +14,8 @@ class PublicIpAddressController extends AbstractController
 {
     /**
      * @Route(
-     *     "/api/ip-address-request/json"
+     *     "/api/public-ipaddress-request/json",
+     *     name="api_public_ipaddress_request"
      * )
      */
     public function getPublicIpAddressRequest(
